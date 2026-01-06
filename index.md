@@ -21,13 +21,10 @@ Instead of placing static defenses on a grid (classic tower defense), the player
 The gameplay is built around three pillars: shooting, evasion, and wave management, with enemy waves increasing in difficulty over time.
 ​
 Key gameplay elements include:
-​
-- Player customization via skin selection (Classic, Cactus, Carnivorous Plant) and simple controls (Arrow Keys/WASD movement, automatic fire, Space/Enter for interactions).
-​
-- A wave system that spawns zombies using timer-based logic, creating escalating pressure similar to classic arcade pacing.
-​
-- A defensive “powerup” concept through Wallnuts: they have health, absorb projectile damage for the player, and can be rapidly destroyed if zombies reach and “eat” them.
-​
+- ​Player customization via skin selection (Classic, Cactus, Carnivorous Plant) and simple controls (Arrow Keys/WASD movement, automatic fire, Space/Enter for interactions).
+​- A wave system that spawns zombies using timer-based logic, creating escalating pressure similar to classic arcade pacing.
+​- A defensive “powerup” concept through Wallnuts: they have health, absorb projectile damage for the player, and can be rapidly destroyed if zombies reach and “eat” them.
+
 Technically, the project is implemented in Python using Pygame and follows a Model–View–Controller (MVC) structure to keep logic, rendering, and input handling separated.
 ​
 It relies on Pygame’s sprite system (pygame.sprite.Sprite and pygame.sprite.Group) for efficient entity management, plus rectangular collision checks (pygame Rect.colliderect) to handle hits between projectiles, zombies, and defenses.
