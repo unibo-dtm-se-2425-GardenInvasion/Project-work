@@ -2,7 +2,7 @@
 
 This [repository](https://github.com/unibo-dtm-se-2425-GardenInvasion/Project-work.git) contains the project report of Garden Invasion, a Python implementation with PyGame of space invader using the texture of plants vs zombies.
 
-- To access the report, click [here](https://unibo-dtm-se-2425-GardenInvasion.github.io/report/).
+- To access the report, click [here](https://unibo-dtm-se-2425-gardeninvasion.github.io/Project-work/).
 
 - To access the repository containing the code, click [here](https://github.com/unibo-dtm-se-2425-GardenInvasion/SoftwareArtifact.git).
 
