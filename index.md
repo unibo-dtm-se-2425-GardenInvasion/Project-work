@@ -5,7 +5,7 @@ has_children: false
 nav_order: 1
 ---
 
-# Project title
+# Garden Invasion
 
 ### Authors
 
@@ -15,11 +15,11 @@ nav_order: 1
 ## Abstract
 
 Garden Invasion is a software engineering project that fuses the arcade immediacy of Space Invaders with the “plants vs zombies” theme into a single action-focused experience.
-​
+
 Instead of placing static defenses on a grid (classic tower defense), the player directly controls one plant that moves left/right along the bottom of the screen, turning defense into a reflex-based shooter.
-​
+
 The gameplay is built around three pillars: shooting, evasion, and wave management, with enemy waves increasing in difficulty over time.
-​
+
 Key gameplay elements include:
 
 - Player customization via skin selection (Classic, Cactus, Carnivorous Plant) and simple controls (Arrow Keys/WASD movement, automatic fire, Space/Enter for interactions).
