@@ -29,7 +29,7 @@ Key gameplay elements include:
 - A defensive “powerup” concept through Wallnuts: they have health, absorb projectile damage for the player, and can be rapidly destroyed if zombies reach and “eat” them.
 
 Technically, the project is implemented in Python using Pygame and follows a Model–View–Controller (MVC) structure to keep logic, rendering, and input handling separated.
-​
+
 It relies on Pygame’s sprite system (pygame.sprite.Sprite and pygame.sprite.Group) for efficient entity management, plus rectangular collision checks (pygame Rect.colliderect) to handle hits between projectiles, zombies, and defenses.
 
 ## Disclaimer
