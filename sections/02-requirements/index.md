@@ -65,11 +65,7 @@ nav_order: 3
 | I01 | The project must be implemented in **Python 3.12** | Course requirement (Software Engineering @ DTM/UniBo) | The project runs with `python3` and no Python 2 syntax is present |
 | I02 | **Pygame** must be used as the game and rendering library | Course requirement; provides sprite, event, and collision primitives needed | All rendering, input handling, and collision detection use Pygame APIs exclusively |
 | I03 | The project must follow the **MVC** architectural pattern | Course requirement to demonstrate software design principles | Model files contain no rendering calls; View files contain no game logic; Controller files mediate between the two |
-| I04 | **unittest** must be used for automated testing | Course requirement; standard Python testing framework | All tests are written using `unittest.TestCase` and pass via `python -m pytest` or `python -m unittest` |
-| I05 | The project must use **semantic versioning** and **conventional commits** | Course CI/CD pipeline is configured around these conventions | All commit messages follow the `type: description` format; version is automatically bumped by semantic-release on merge to master |
-| I06 | The project must be **installable as a Python package** | Enables distribution via PyPI and consistent dependency management | Running `pip install .` installs the package without errors; the game can be launched after installation |
-| I07 | A **CI/CD pipeline** must automatically run tests and publish releases | Course requirement to demonstrate DevOps practices | GitHub Actions runs all tests on every push; a passing build on master triggers a semantic-release version bump and PyPI upload |
-| I08 | The game must run locally on a desktop environment without internet access | Ensures accessibility and easy testing in offline environments | The game launches and plays fully without any network connection or external authentication |
+| I04 | The game must run locally on a desktop environment without internet access | Ensures accessibility and easy testing in offline environments | The game launches and plays fully without any network connection or external authentication |
 
 ---
 
