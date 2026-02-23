@@ -26,7 +26,7 @@ Key gameplay elements include:
 
 - A wave system that spawns zombies using timer-based logic, creating escalating pressure similar to classic arcade pacing.
 
-- A defensive “powerup” concept through Wallnuts: they have health, absorb projectile damage for the player, and can be rapidly destroyed if zombies reach and “eat” them.
+- A power-up system where defeated zombies can drop a collectible power-up that falls slowly from the death position. Two types exist: IncreasingFirePU, which temporarily reduces the plant's shoot cooldown, and RepairWallnutPU, which instantly restores all wallnuts to full health and re-spawns any that were fully destroyed, visually reflected in real time through sprite changes.
 
 Technically, the project is implemented in Python using Pygame and follows a Model–View–Controller (MVC) structure to keep logic, rendering, and input handling separated.
 
