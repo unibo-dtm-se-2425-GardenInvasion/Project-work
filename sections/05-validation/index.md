@@ -8,9 +8,15 @@ nav_order: 6
 
 ## Testing approach
 
-- Describe what approach you followed for testing your software
-- If you followed TDD, describe it here
-- Also mention which testing framework you used (e.g. `unittest` or `pytest`) and why
+The project follows a **post-implementation testing** approach rather than strict Test-Driven Development. Tests were written in parallel with the implementation, covering all three layers of the MVC architecture: `Model`, `View`, and `Controller`. The testing framework used is Python's built-in **`unittest`**, invoked via:
+
+```bash
+python -m unittest discover -s test -t .
+```
+
+`unittest` was chosen because it is part of the Python standard library, without the need for extra dependency, and it provides rich assertion methods along with `unittest.mock` for isolating components. The CI workflow runs the full test suite in a matrix of **Python 3.12 and 3.13** across **Ubuntu, Windows, and macOS** on every push and pull request.
+
+Since GardenInvasion relies on Pygame for rendering and audio, all tests that need a display or sound system set the SDL environment variables `SDL_VIDEODRIVER=dummy` and `SDL_AUDIODRIVER=dummy` to avoid requiring a real graphical session, which allows the suite to run correctly in headless CI environments.
 
 ## Testing (automated)
 
