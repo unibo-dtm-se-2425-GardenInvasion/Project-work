@@ -18,11 +18,7 @@ The repository maintains two long-lived branches:
 
 ### Commit message conventions
 
-The project adopts the **Conventional Commits** specification, enforced through the `semantic-release-preconfigured-conventional-commits` package. Commit messages follow this format:
-
-<type>(<scope>): <short description>
-
-Common types include:
+The project adopts the **Conventional Commits** specification, enforced through the `semantic-release-preconfigured-conventional-commits` package. Common types include:
 - `feat`: a new feature (triggers a minor release)
 - `fix`: a bug fix (triggers a patch release)
 - `chore`: maintenance tasks
