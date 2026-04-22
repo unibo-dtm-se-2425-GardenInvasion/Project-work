@@ -6,26 +6,38 @@ nav_order: 7
 
 # Release
 
-- Which and how many artefacts are produced from your project's codebase?
-- Onto which repositories (e.g. PyPI, Docker Hub, GitHub Packages, NPM etc.) are they released? Why?
-- How are they released (e.g. manually, automatically, etc.)?
-   + report the configuration steps and commands to run to release the artefacts
+The project produces **one artefact**: a Python package named `unibo-dtm-se-2425-GardenInvasion`, built from the source code using `python -m build`. It is released onto **PyPI**. 
+
+## How releases work
+
+Releases are **fully automatic**. Every time a commit is pushed to the `master` branch and all CI tests pass, the deploy workflow runs `semantic-release`. 
+
+No manual steps are needed to publish a release. The only configuration required is setting two GitHub repository secrets: `PYPI_USERNAME` and `PYPI_PASSWORD`.
 
 ## Choice of the license
 
-- Which license did you choose for your artefacts? Why?
-- Which license did you choose for your code? Why?
+The project is released under the **Apache 2.0 License**. This was chosen because it is a permissive open-source license that allows anyone to use, modify, and distribute the software freely, while still protecting contributors from patent claims. Both the code and the distributed artefact use the same license.
 
 ## Choice of the versioning schema
 
-- Which versioning schema (e.g. date-based versioning, SemVer, etc.) did you choose for your artefacts? Why?
-   + how does the versioning schema work?
+The project uses **Semantic Versioning**: `MAJOR.MINOR.PATCH`.
 
-- In case of multiple artefacts, are the version numbers aligned or each artefact has its own versioning pace? Why?
+- **PATCH** (e.g. `1.0.0` → `1.0.1`): a bug fix commit (`fix:`)
+- **MINOR** (e.g. `1.0.1` → `1.1.0`): a new feature commit (`feat:`)
+- **MAJOR** (e.g. `1.9.0` → `2.0.0`): a breaking change (commit contains `BREAKING CHANGE`)
 
-- Describe when and how to create a new version of the artefacts in your project
-   + e.g. when to increment the major, minor, and patch version numbers
-   + e.g. how to create a new release branch
-   + e.g. how to create a new tag
-   + e.g. how to create a new release on GitHub
+Semantic Versioning was chosen because it communicates intent clearly, allowinf the users to immediately tell from the version number whether an update is safe to apply or introduces new behaviour.
 
+Version numbers are determined **automatically** by `semantic-release` based on Conventional Commits. The current latest version is **1.9.0**. Key milestones include:
+
+| Version | Date | What changed |
+|---|---|---|
+| 1.0.0 | 2025-12-30 | Initial release: core game, audio, skin system, CI setup |
+| 1.1.0 | 2026-01-15 | 2-life-point system for plant and wallnuts |
+| 1.2.0 | 2026-01-16 | Plant projectile vs zombie collision |
+| 1.3.0 | 2026-01-17 | Zombie projectile vs plant collision |
+| 1.4.0 | 2026-01-18 | Game over screen with fade-in animation |
+| 1.5.0 | 2026-02-05 | Sprite rendering for zombies and projectiles |
+| 1.7.0 | 2026-02-14 | Heart display HUD |
+| 1.8.0 | 2026-02-15 | Victory screen with fade-in animation and sound |
+| 1.9.0 | 2026-02-22 | Power-up system (fire rate boost + wallnut repair) |
