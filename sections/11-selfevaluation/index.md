@@ -37,3 +37,29 @@ nav_order: 12
   From a more technical gameplay perspective, future improvements could include new enemy types introduced as levels progress, power-ups, boss fights, status effects such as speed changes, buffs and debuffs, weapon customization, and a basic loadout system. These mechanics could start simple and gradually become more varied as the player advances through the game, increasing both depth and replayability.
 
 ## Filippo Malocco
+
+- **Role and contribution within the group**
+
+  My role in the group was primarily technical and organizational. I was responsible for setting up and maintaining the project infrastructure, including the repository structure, the CI/CD pipeline using GitHub Actions and semantic-release, the setup.py configuration for PyPI distribution, and the Renovate bot for automated dependency updates. 
+  
+  From an implementation perspective, I contributed to a large portion of the codebase across all three MVC layers. My most significant features include the menu and options system (main menu, options screen, volume control, skin selection), the game over and victory screens with fade-in animations, the heart display HUD, the zombie and projectile sprite rendering system, the power-up system (fire-rate boost and wallnut repair), and various collision system refinements such as removing the wallnut-projectile collision to allow plant projectiles to pass through freely. 
+  
+  I also wrote and maintained a substantial share of the test suite, including fixing timing issues in shooting cooldown tests and updating tests across multiple CI failures. 
+  
+  Throughout the project I was also responsible for code quality and cleanliness: I removed debug print statements, cleaned up comments, and resolved merge conflicts to keep the master branch stable and always releasable.
+
+- **Strengths of the product and of my contribution**
+
+  One strength of the product that I am particularly satisfied with is the overall polish of the user-facing screens. The menus, the game over and victory screens, and the HUD are consistent in style and respond correctly to both keyboard and mouse input, which gives the game a more complete feel despite its scope.
+  
+  Another strength is the engineering discipline of the project. The use of Conventional Commits, automated versioning via semantic-release, and a CI matrix with Python 3.12 and 3.13. This infrastructure made collaboration easier and ensured the product was always in a releasable state.
+  
+  Regarding my personal contribution, I believe my I think my overall understanding of the project: I was involved in every layer of the architecture (Model, View, Controller, tests, and CI) which gave me a complete picture of the system and allowed me to integrate components reliably.
+
+- **Weaknesses and possible improvements**
+
+  One weakness I recognize in my contribution is that, by being involved across so many areas, some individual features were implemented quickly without the depth they deserved. 
+  
+  The power-up system in particular is functional but minimal: there are only two power-up types, and the drop probability (currently 50%) was adjusted experimentally rather than through systematic playtesting. A more methodical approach to gameplay balancing would have produced a more refined experience.
+  
+  A technical weakness of the current product is the absence of persistent settings across sessions beyond volume and skin. Features such as a high score table or per-session statistics would add meaningful replayability and are straightforward to implement on top of the existing SettingsModel JSON persistence mechanism. 
