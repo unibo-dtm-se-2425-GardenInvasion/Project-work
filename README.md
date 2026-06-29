@@ -15,7 +15,7 @@ You need to install __Ruby__ on your machine (instructions below).
 1. Assuming that Ruby is correctly installed, you need to clone your report repository on your machine:
     
     ```bash
-    git clone https://github.com/unibo-dtm-se-2425-GardenInvasion/report
+    git clone https://github.com/unibo-dtm-se-2425-GardenInvasion/Project-work
     ```
 
 2. Then, you need to restore Jeckyll's dependencies.
